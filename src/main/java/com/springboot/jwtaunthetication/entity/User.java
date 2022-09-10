@@ -1,4 +1,4 @@
-package com.springboot.jwtaunthetication.userapi;
+package com.springboot.jwtaunthetication.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

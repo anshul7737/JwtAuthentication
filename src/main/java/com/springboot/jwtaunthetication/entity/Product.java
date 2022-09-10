@@ -1,4 +1,4 @@
-package com.springboot.jwtaunthetication.productapi;
+package com.springboot.jwtaunthetication.entity;
 
 import javax.persistence.*;
 

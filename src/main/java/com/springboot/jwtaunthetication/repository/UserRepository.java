@@ -1,5 +1,6 @@
-package com.springboot.jwtaunthetication.userapi;
+package com.springboot.jwtaunthetication.repository;
 
+import com.springboot.jwtaunthetication.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

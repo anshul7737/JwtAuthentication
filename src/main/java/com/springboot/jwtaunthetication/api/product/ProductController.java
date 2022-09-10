@@ -1,5 +1,7 @@
-package com.springboot.jwtaunthetication.productapi;
+package com.springboot.jwtaunthetication.api.product;
 
+import com.springboot.jwtaunthetication.entity.Product;
+import com.springboot.jwtaunthetication.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

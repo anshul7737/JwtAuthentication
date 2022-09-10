@@ -1,4 +1,4 @@
-package com.springboot.jwtaunthetication.api;
+package com.springboot.jwtaunthetication.dto;
 
 import javax.validation.constraints.Email;
 

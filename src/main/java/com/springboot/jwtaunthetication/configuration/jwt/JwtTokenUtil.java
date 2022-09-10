@@ -1,13 +1,12 @@
-package com.springboot.jwtaunthetication.jwt;
+package com.springboot.jwtaunthetication.configuration.jwt;
 
-import com.springboot.jwtaunthetication.userapi.User;
+import com.springboot.jwtaunthetication.entity.User;
 import io.jsonwebtoken.*;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
-import java.util.logging.Logger;
 
 @Component
 public class JwtTokenUtil {

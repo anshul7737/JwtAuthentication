@@ -1,6 +1,8 @@
-package com.springboot.jwtaunthetication.userapi;
+package com.springboot.jwtaunthetication.api.user;
 
 
+import com.springboot.jwtaunthetication.entity.User;
+import com.springboot.jwtaunthetication.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

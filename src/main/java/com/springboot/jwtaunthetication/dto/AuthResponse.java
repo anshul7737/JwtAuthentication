@@ -1,4 +1,4 @@
-package com.springboot.jwtaunthetication.api;
+package com.springboot.jwtaunthetication.dto;
 
 public class AuthResponse {
 
