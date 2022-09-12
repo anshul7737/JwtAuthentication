@@ -5,6 +5,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class User implements UserDetails {
@@ -16,6 +18,10 @@ public class User implements UserDetails {
     private String email;
     @Column(nullable = false,length = 64)
     private String password;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "users_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles = new HashSet<>();
 
     public User() {
         super();
@@ -81,8 +87,11 @@ public class User implements UserDetails {
     }
 
 
+    public Set<Role> getRoles() {
+        return roles;
+    }
 
-
-
-
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
 }
